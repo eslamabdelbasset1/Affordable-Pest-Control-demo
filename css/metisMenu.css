@@ -1,0 +1,27 @@
+
+.metismenu .arrow {
+    float: right;
+    line-height: 1.42857;
+  }
+  *[dir="rtl"] .metismenu .arrow {
+    float: left;
+  }
+  
+  /*
+   * Require Bootstrap 3.x
+   * https://github.com/twbs/bootstrap
+  */
+  
+  .metismenu .glyphicon.arrow:before {
+    content: "\e079";
+  }
+
+
+  .metismenu .collapse {
+    display: none;
+  }
+  .metismenu .collapse.in {
+    display: block;
+  }
+
+  /*# sourceMappingURL=metisMenu.css.map */
