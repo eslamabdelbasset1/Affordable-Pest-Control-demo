@@ -612,14 +612,12 @@ main select.form-select{
 
 .main-content-mapping {
     transition: margin-left 300ms;
-    margin-left: 275px;
+    margin-left: 340px;
 }
 .main-content-mapping .nav-mapping{
-    position: fixed;
+    width: 95%;
+    height: 100vh;
 
-    width: 20%;
-    top: 0;
-    height: 100%;
     background: #FFFFFF;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.0889833);
     z-index: 100;
@@ -659,4 +657,29 @@ main select.form-select{
     position: absolute;
     right: 18px;
     top: 14px;
+}
+.main-content-mapping main.body-map{
+    margin-top: 0;
+    padding: 0;
+    min-height: calc(100vh - 90px);
+
+}
+.main-content-mapping main.body-map #map {
+    margin: -3% 0 0 -3%;
+    padding: 0;
+    min-height: calc(60vh - 90px);
+}
+.main-content-mapping table
+{
+    text-align: center;
+    background: #FFFFFF;
+    border: 1px solid #E5E5E5;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.087);
+    border-radius: 7%;
+}
+.main-content-mapping table th{
+    padding: 20px;
+}
+.main-content-mapping table th.active{
+    background: #69A200;
 }
