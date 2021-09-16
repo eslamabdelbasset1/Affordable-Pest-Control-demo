@@ -1,0 +1,90 @@
+:root {
+    --theadColor: #69A200;
+}
+
+.dataTables_wrapper .dataTables_filter input
+{
+    border: 1px solid #69A200;
+    margin-left: 8px;
+}
+.dataTables_wrapper .dataTables_length select
+{
+    border: 1px solid #69A200;
+}
+thead {
+    background-color: transparent;
+    color: #F2F2F2;
+}
+
+thead > tr,
+thead > tr > th
+{
+    background-color: transparent;
+    color: #868B8F;
+    font-weight: normal;
+    text-align: start;
+}
+tbody td .dropdown-menu.show{margin-left: -12%;}
+tbody td .dropdown-menu .dropdown-item
+{
+    padding: 0.25rem 0.5rem;
+}
+tbody td .dropdown-menu .dropdown-item i{color: #292929;}
+.fa-ellipsis
+{
+    font-size: 12px;
+    font-weight: 500;
+    color: #474D53;
+    letter-spacing: 0;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    text-align: center;
+
+}
+table.dataTable thead th,
+table.dataTable thead td
+{
+    border-bottom: 0 solid #868B8F !important;
+    color: #868B8F;
+}
+.dataTables_wrapper > div
+{
+    margin: 5px;
+}
+
+table.dataTable thead th
+{
+    position: relative;
+    background-image: none !important;
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button.current,
+.dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
+    background: none !important;
+    background-color: var(--theadColor) !important;
+    color:#fff !important;
+    transition: all 0.4s;
+}
+
+.paginate_button.current:hover
+{
+    background: none !important;
+    background-color: var(--theadColor) !important;
+    color:#fff !important;
+    transition: all 0.4s;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.current:hover,
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+
+    border: 1px solid #979797;
+    background: none !important;
+    border-radius: 10px !important;
+    background-color: #69A200 !important;
+    color: #fff !important;
+    transition: all 0.4s;
+}
+.table.dataTable.no-footer{border: none !important}
+
