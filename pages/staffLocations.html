@@ -171,10 +171,7 @@
             <div class="icon-link">
                 <a href="#">
                     <span id="logout" class="link_name">Sign Up</span>
-                    <svg class="logout-svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">-->
-                        <path d="M9.9999 8.66654C9.63126 8.66654 9.33329 8.96525 9.33329 9.33316V11.9999C9.33329 12.3672 9.03458 12.6665 8.66654 12.6665H6.66656V2.6666C6.66656 2.09727 6.30389 1.58861 5.75861 1.39928L5.56123 1.33324H8.66654C9.03458 1.33324 9.33329 1.63255 9.33329 1.99998V3.99996C9.33329 4.36788 9.63126 4.66658 9.9999 4.66658C10.3686 4.66658 10.6665 4.36788 10.6665 3.99996V1.99998C10.6665 0.89733 9.76919 0 8.66654 0H1.49999C1.4746 0 1.45336 0.0113524 1.4287 0.0146483C1.39659 0.0119628 1.36595 0 1.33336 0C0.598017 0 0 0.597895 0 1.33324V13.3331C0 13.9025 0.362667 14.4111 0.90795 14.6004L4.92 15.9378C5.05598 15.9798 5.19123 15.9998 5.33332 15.9998C6.06867 15.9998 6.66656 15.4018 6.66656 14.6665V13.9999H8.66654C9.76919 13.9999 10.6665 13.1025 10.6665 11.9999V9.33316C10.6665 8.96525 10.3686 8.66654 9.9999 8.66654Z" fill="#939DA7"/>
-                        <path d="M15.8045 6.19524L13.1378 3.52864C12.9472 3.33797 12.6605 3.2806 12.4112 3.38387C12.1626 3.48726 11.9998 3.73054 11.9998 3.99995V5.99993H9.33325C8.96521 5.99993 8.6665 6.29851 8.6665 6.66655C8.6665 7.03459 8.96521 7.33317 9.33325 7.33317H11.9998V9.33315C11.9998 9.60256 12.1626 9.84584 12.4112 9.94924C12.6605 10.0525 12.9472 9.99513 13.1378 9.80458L15.8045 7.13786C16.0651 6.87724 16.0651 6.45586 15.8045 6.19524Z" fill="#939DA7"/>
-                    </svg>
+                    <i class="logout-svg fas fa-sign-out-alt"></i>
                 </a>
             </div>
         </li>
@@ -184,13 +181,13 @@
 <section class="main-content-mapping position-relative">
     <div class="row">
         <div class="col-md-3">
-            <div class="nav-mapping pt-4">
+            <div class="nav-mapping pt-4 pos">
                 <div class="row">
                     <div class="col-sm-3">
                         <h2>
                             <label for="nav-toggle">
                                 <span class="ml-2 p-2">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="13" viewBox="0 0 14 13" fill="none">
+                                    <svg class="nav-toggle" xmlns="http://www.w3.org/2000/svg" width="14" height="13" viewBox="0 0 14 13" fill="none">
                                     <path d="M13 1.5H1" stroke="#8F99A4" stroke-width="1.8" stroke-linecap="round"/>
                                     <path d="M13 11.5H1" stroke="#8F99A4" stroke-width="1.8" stroke-linecap="round"/>
                                     <path d="M9.33692 6.5H1" stroke="#8F99A4" stroke-width="1.8" stroke-linecap="round"/>
@@ -198,9 +195,9 @@
                                 </span>
                             </label>
                         </h2>
-                     </div>
+                    </div>
                     <div class="col-sm-9">
-                            <div class="search-box pull-left">
+                        <div class="search-box pull-left">
                             <form action="#">
                                 <input type="text" name="search" placeholder="Search for anything…" required>
                                 <i class="ml-3 fas fa-search"></i>
@@ -215,8 +212,151 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="mapping-img pt-3">
+                    <div class="user-profile">
+                        <img class="left-img img1" src="../image/mapping-img/img1.png" alt="">
+                        <div class="caption">
+                            <h4 class="user-name">Andrew Smith</h4>
+                            <p class="user-id">ID: B00-2391111</p>
+                            <button class="btn-outline-light">On duty</button>
+                            <button class="details btn-outline-light">View details</button>
+                        </div>
+                        <div class="right-img">
+                            <small>1:23:16</small>
+                            <img src="../image/icon/MelbourneGoogle_Maps.png" alt="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
+                                <circle cx="7.5" cy="7.49998" r="6.5" fill="#81B214" stroke="white"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="user-profile">
+                        <img class="left-img img2" src="../image/mapping-img/img2.png" alt="">
+                        <div class="caption">
+                            <h4 class="user-name">Jennifer</h4>
+                            <p class="user-id">ID: B00-2391</p>
+                            <button class="btn-outline-light to-do">No to-do</button>
+                            <button class="details btn-outline-light">View details</button>
+                        </div>
+                        <div class="right-img">
+                            <small>1:23:16</small>
+                            <img src="../image/icon/MelbourneGoogle_Maps.png" alt="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
+                                <circle cx="7.5" cy="7.49998" r="6.5" fill="#FFFFFF" stroke="white"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="user-profile">
+                        <img class="left-img img3" src="../image/mapping-img/img3.png" alt="">
+                        <div class="caption">
+                            <h4 class="user-name">Jonathan</h4>
+                            <p class="user-id">ID: B00-2391</p>
+                            <button class="btn-outline-light on-way">On way</button>
+                            <button class="details btn-outline-light">View details</button>
+                        </div>
+                        <div class="right-img">
+                            <small>1:23:16</small>
+                            <img src="../image/icon/MelbourneGoogle_Maps.png" alt="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
+                                <circle cx="7.5" cy="7.49998" r="6.5" fill="#FFCC29" stroke="white"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="group">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="user-profile">
+                                    <img class="left-img img1" src="../image/mapping-img/img1.png" alt="">
+                                    <div class="caption">
+                                        <h4 class="user-name">Andrew Smith</h4>
+                                        <p class="user-id">ID: B00-2391111</p>
+                                        <button class="btn-outline-light">On duty</button>
+                                        <button class="details btn-outline-light">View details</button>
+                                    </div>
+                                    <div class="right-img">
+                                        <small>1:23:16</small>
+                                        <img src="../image/icon/MelbourneGoogle_Maps.png" alt="">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
+                                            <circle cx="7.5" cy="7.49998" r="6.5" fill="#81B214" stroke="white"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="user-profile">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <p class="km">
+                                        12KM
+                                    </p>
+                                    <div class="shap ">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="4" height="50" viewBox="0 0 3 32" fill="none">
+                                            <path d="M1.5 0.600092V32.5001" stroke="#69A200" stroke-width="1.4" stroke-dasharray="3"/>
+                                        </svg>
+                                    </div>
+                                    <div class="caption ml-3">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="212" height="2" viewBox="0 0 212 2" fill="none">
+                                            <path d="M0.0683594 0.908661H211.068" stroke="#E5E5E5"/>
+                                        </svg>
+                                        <h4 class="location-name">Steph Meyer & Co - St Kilda</h4>
+                                        <p class="location-id">Studio 12/107 Grey St, St Kilda VIC 3182, Australia</p>
+                                        <button class="to-do btn-outline-light">+61 432 696 887</button>
+                                        <button class="details btn-outline-light"><i class="fas fa-location-arrow"></i> Get Direction</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="user-profile">
+                                    <div class="caption">
+                                        <p>Note:</p>
+                                        <p class="user-id bg-light">
+                                            Lorem Ipsum has been the industry's standard dummy text ever since1500s…
+                                        </p>
+
+                                        <div class="footer d-flex justify-content-between">
+                                            <button class="btn-outline-light to-do"><i class="fas fa-plus"></i> ADD NEW JOB</button>
+                                            <button class="details btn-outline-light"><i class="fas fa-list-ul"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="user-profile">
+                        <img class="left-img img2" src="../image/mapping-img/img2.png" alt="">
+                        <div class="caption">
+                            <h4 class="user-name">Jennifer</h4>
+                            <p class="user-id">ID: B00-2391</p>
+                            <button class="btn-outline-light to-do">No to-do</button>
+                            <button class="details btn-outline-light">View details</button>
+                        </div>
+                        <div class="right-img">
+                            <small>1:23:16</small>
+                            <img src="../image/icon/MelbourneGoogle_Maps.png" alt="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
+                                <circle cx="7.5" cy="7.49998" r="6.5" fill="#FFFFFF" stroke="white"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="user-profile">
+                        <img class="left-img img3" src="../image/mapping-img/img3.png" alt="">
+                        <div class="caption">
+                            <h4 class="user-name">Jonathan</h4>
+                            <p class="user-id">ID: B00-2391</p>
+                            <button class="btn-outline-light on-way">On way</button>
+                            <button class="details btn-outline-light">View details</button>
+                        </div>
+                        <div class="right-img">
+                            <small>1:23:16</small>
+                            <img src="../image/icon/MelbourneGoogle_Maps.png" alt="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
+                                <circle cx="7.5" cy="7.49998" r="6.5" fill="#FFCC29" stroke="white"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+
         <div class="col-md-9">
             <main class="body-map">
                 <div class="row">
