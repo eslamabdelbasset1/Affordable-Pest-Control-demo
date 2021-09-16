@@ -1,33 +1,29 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
-    <title>Staff Location</title>
-    <link rel="icon" href="../images/logo/apc_logo.png">
-    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="../css/font-awesome.min.css">
-    <link rel="stylesheet" href="../css/all.min.css">n
+    <link rel="stylesheet" href="../css/all.min.css">
     <link rel="stylesheet" href="../vendors/bootstrap/bootstrap.min.css">
-    <link rel="stylesheet" href="../css/metisMenu.css">
-    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
-    <!-- others css -->
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/staff_style.css">
-    <link rel="stylesheet" href="../css/responsive.css">
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
-</head>
+    <link rel="stylesheet" href="../css/report-style.css">
 
+    <title>Rodent Reports</title>
+    <link rel="icon" href="../images/logo/apc_logo.png">
+</head>
 <body>
+
 <input type="checkbox" id="nav-toggle">
 <div class="sidebar main-menu">
 
 
     <div class="sidebar-brand">
         <h2>
-            <span id="logo-small" class="d-none ml-3"><img src="../images/logo/apc_logo.png" alt=""></span>
-            <span><img id="logo-lg" src="../images/logo/Bitmap.png" alt=""></span>
+            <span id="logo-small" class="d-none ml-3"><a href="../index.html"><img src="../images/logo/apc_logo.png" alt=""></a></span>
+            <span><a href="../index.html"><img id="logo-lg" src="../images/logo/Bitmap.png" alt=""></a></span>
         </h2>
     </div>
     <ul class="nav-links">
@@ -141,7 +137,7 @@
             <ul class="sub-menu blank">
                 <li><a class="link_name" href="#">Report</a></li>
                 <li><a>Termite Inspection</a></li>
-                <li><a>Rodent Reports</a></li>
+                <li><a href="../pages/rodentReports.html">Rodent Reports</a></li>
                 <li><a>Service Reports</a></li>
                 <li><a>Report Setting</a></li>
             </ul>
@@ -180,293 +176,72 @@
     </ul>
 </div>
 
-<section class="main-content-mapping position-relative">
-    <div class="row">
-        <div class="col-md-3">
-            <div class="nav-mapping pt-4 pos">
-                <div class="row">
-                    <div class="col-sm-3">
-                        <h2>
-                            <label for="nav-toggle">
-                                <span class="ml-2 p-2">
-                                    <svg class="nav-toggle" xmlns="http://www.w3.org/2000/svg" width="14" height="13" viewBox="0 0 14 13" fill="none">
-                                    <path d="M13 1.5H1" stroke="#8F99A4" stroke-width="1.8" stroke-linecap="round"/>
-                                    <path d="M13 11.5H1" stroke="#8F99A4" stroke-width="1.8" stroke-linecap="round"/>
-                                    <path d="M9.33692 6.5H1" stroke="#8F99A4" stroke-width="1.8" stroke-linecap="round"/>
-                                    </svg>
-                                </span>
-                            </label>
-                        </h2>
-                    </div>
-                    <div class="col-sm-9">
-                        <div class="search-box pull-left">
-                            <form action="#">
-                                <input type="text" name="search" placeholder="Search for anything…" required>
-                                <i class="ml-3 fas fa-search"></i>
-                            </form>
-                        </div>
-                        <div class="user-wrapper">
-                            <span class="notification-area">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 17 16" fill="none">
-                                    <path d="M13.919 8.81704C13.9157 8.81704 13.9124 8.81779 13.9091 8.81779C10.7519 8.81779 8.18207 6.2487 8.18207 3.09071C8.18207 2.22257 8.38177 1.40191 8.72947 0.663945C8.5494 0.646867 8.36693 0.63623 8.18207 0.63623C5.01914 0.63623 2.45499 3.20022 2.45499 6.36331V8.64431C2.45499 10.2635 1.74564 11.7918 0.501174 12.8439C0.0863504 13.1982 -0.0977657 13.7627 0.0511451 14.3134C0.224625 14.954 0.857871 15.3631 1.52228 15.3631H14.8378C15.5349 15.3631 16.1919 14.9115 16.3334 14.2283C16.443 13.6998 16.2549 13.172 15.845 12.8276C14.6553 11.8303 13.9673 10.3649 13.919 8.81704Z" fill="#939DA7"/>
-                                </svg>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="mapping-img pt-3">
-                    <div class="user-profile">
-                        <img class="left-img img1" src="../images/mapping-img/img1.png" alt="">
-                        <div class="caption">
-                            <h4 class="user-name">Andrew Smith</h4>
-                            <p class="user-id">ID: B00-2391111</p>
-                            <button class="btn-outline-light">On duty</button>
-                            <button class="details btn-outline-light">View details</button>
-                        </div>
-                        <div class="right-img">
-                            <small>1:23:16</small>
-                            <img src="../images/icon/MelbourneGoogle_Maps.png" alt="">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
-                                <circle cx="7.5" cy="7.49998" r="6.5" fill="#81B214" stroke="white"/>
-                            </svg>
-                        </div>
-                    </div>
-                    <div class="user-profile">
-                        <img class="left-img img2" src="../images/mapping-img/img2.png" alt="">
-                        <div class="caption">
-                            <h4 class="user-name">Jennifer</h4>
-                            <p class="user-id">ID: B00-2391</p>
-                            <button class="btn-outline-light to-do">No to-do</button>
-                            <button class="details btn-outline-light">View details</button>
-                        </div>
-                        <div class="right-img">
-                            <small>1:23:16</small>
-                            <img src="../images/icon/MelbourneGoogle_Maps.png" alt="">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
-                                <circle cx="7.5" cy="7.49998" r="6.5" fill="#FFFFFF" stroke="white"/>
-                            </svg>
-                        </div>
-                    </div>
-                    <div class="user-profile">
-                        <img class="left-img img3" src="../images/mapping-img/img3.png" alt="">
-                        <div class="caption">
-                            <h4 class="user-name">Jonathan</h4>
-                            <p class="user-id">ID: B00-2391</p>
-                            <button class="btn-outline-light on-way">On way</button>
-                            <button class="details btn-outline-light">View details</button>
-                        </div>
-                        <div class="right-img">
-                            <small>1:23:16</small>
-                            <img src="../images/icon/MelbourneGoogle_Maps.png" alt="">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
-                                <circle cx="7.5" cy="7.49998" r="6.5" fill="#FFCC29" stroke="white"/>
-                            </svg>
-                        </div>
-                    </div>
-                    <div class="group">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="user-profile">
-                                    <img class="left-img img1" src="../images/mapping-img/img1.png" alt="">
-                                    <div class="caption">
-                                        <h4 class="user-name">Andrew Smith</h4>
-                                        <p class="user-id">ID: B00-2391111</p>
-                                        <button class="btn-outline-light">On duty</button>
-                                        <button class="details btn-outline-light">View details</button>
-                                    </div>
-                                    <div class="right-img">
-                                        <small>1:23:16</small>
-                                        <img src="../images/icon/MelbourneGoogle_Maps.png" alt="">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
-                                            <circle cx="7.5" cy="7.49998" r="6.5" fill="#81B214" stroke="white"/>
-                                        </svg>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-12">
-                                <div class="user-profile">
-                                    <i class="fas fa-map-marker-alt"></i>
-                                    <p class="km">
-                                        12KM
-                                    </p>
-                                    <div class="shap ">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="4" height="50" viewBox="0 0 3 32" fill="none">
-                                            <path d="M1.5 0.600092V32.5001" stroke="#69A200" stroke-width="1.4" stroke-dasharray="3"/>
-                                        </svg>
-                                    </div>
-                                    <div class="caption ml-3">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="212" height="2" viewBox="0 0 212 2" fill="none">
-                                            <path d="M0.0683594 0.908661H211.068" stroke="#E5E5E5"/>
-                                        </svg>
-                                        <h4 class="location-name">Steph Meyer & Co - St Kilda</h4>
-                                        <p class="location-id">Studio 12/107 Grey St, St Kilda VIC 3182, Australia</p>
-                                        <button class="to-do btn-outline-light">+61 432 696 887</button>
-                                        <button class="details btn-outline-light"><i class="fas fa-location-arrow"></i> Get Direction</button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-12">
-                                <div class="user-profile">
-                                    <div class="caption">
-                                        <p>Note:</p>
-                                        <p class="user-id bg-light">
-                                            Lorem Ipsum has been the industry's standard dummy text ever since1500s…
-                                        </p>
-
-                                        <div class="footer d-flex justify-content-between">
-                                            <button class="btn-outline-light to-do"><i class="fas fa-plus"></i> ADD NEW JOB</button>
-                                            <button class="details btn-outline-light"><i class="fas fa-list-ul"></i></button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="user-profile">
-                        <img class="left-img img2" src="../images/mapping-img/img2.png" alt="">
-                        <div class="caption">
-                            <h4 class="user-name">Jennifer</h4>
-                            <p class="user-id">ID: B00-2391</p>
-                            <button class="btn-outline-light to-do">No to-do</button>
-                            <button class="details btn-outline-light">View details</button>
-                        </div>
-                        <div class="right-img">
-                            <small>1:23:16</small>
-                            <img src="../images/icon/MelbourneGoogle_Maps.png" alt="">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
-                                <circle cx="7.5" cy="7.49998" r="6.5" fill="#FFFFFF" stroke="white"/>
-                            </svg>
-                        </div>
-                    </div>
-                    <div class="user-profile">
-                        <img class="left-img img3" src="../images/mapping-img/img3.png" alt="">
-                        <div class="caption">
-                            <h4 class="user-name">Jonathan</h4>
-                            <p class="user-id">ID: B00-2391</p>
-                            <button class="btn-outline-light on-way">On way</button>
-                            <button class="details btn-outline-light">View details</button>
-                        </div>
-                        <div class="right-img">
-                            <small>1:23:16</small>
-                            <img src="../images/icon/MelbourneGoogle_Maps.png" alt="">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
-                                <circle cx="7.5" cy="7.49998" r="6.5" fill="#FFCC29" stroke="white"/>
-                            </svg>
-                        </div>
-                    </div>
+<section class="main-content">
+    <header>
+        <h2>
+            <label for="nav-toggle">
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="13" viewBox="0 0 14 13" fill="none">
+                        <path d="M13 1.5H1" stroke="#8F99A4" stroke-width="1.8" stroke-linecap="round"/>
+                        <path d="M13 11.5H1" stroke="#8F99A4" stroke-width="1.8" stroke-linecap="round"/>
+                        <path d="M9.33692 6.5H1" stroke="#8F99A4" stroke-width="1.8" stroke-linecap="round"/>
+                        </svg>
+                    </span>
+            </label>
+        </h2>
+        <div class="search-box pull-left">
+            <form action="#">
+                <input type="text" name="search" placeholder="Search for anything…" required>
+                <i class="ml-4 fas fa-search"></i>
+            </form>
+        </div>
+        <div class="user-wrapper">
+                <span class="notification-area">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 17 16" fill="none">
+                        <path d="M13.919 8.81704C13.9157 8.81704 13.9124 8.81779 13.9091 8.81779C10.7519 8.81779 8.18207 6.2487 8.18207 3.09071C8.18207 2.22257 8.38177 1.40191 8.72947 0.663945C8.5494 0.646867 8.36693 0.63623 8.18207 0.63623C5.01914 0.63623 2.45499 3.20022 2.45499 6.36331V8.64431C2.45499 10.2635 1.74564 11.7918 0.501174 12.8439C0.0863504 13.1982 -0.0977657 13.7627 0.0511451 14.3134C0.224625 14.954 0.857871 15.3631 1.52228 15.3631H14.8378C15.5349 15.3631 16.1919 14.9115 16.3334 14.2283C16.443 13.6998 16.2549 13.172 15.845 12.8276C14.6553 11.8303 13.9673 10.3649 13.919 8.81704Z" fill="#939DA7"/>
+                    </svg>
+                </span>
+            <div class="user-profile pull-right">
+                <img class="avatar user-thumb" src="../image/logo/Bitmap-profile.png" alt="avatar">
+                <h4 class="user-name dropdown-toggle" data-toggle="dropdown"> Kumkum Rai <i class="fa fa-angle-down"></i></h4>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Message</a>
+                    <a class="dropdown-item" href="#">Settings</a>
+                    <a class="dropdown-item" href="#">Log Out</a>
                 </div>
             </div>
         </div>
+    </header>
+    <main>
+        <div class="container p-4">
+            <h4>Shirley Curtis</h4>
+            <div class="row py-2">
+                <div class="col-md-8">
+                    <h4>Site Information</h4>
+                    <div class="row py-4">
+                        <div class="col-md-6">
+                            <img src="../images/check_report.png" alt="">
+                        </div>
+                        <div class="col-md-6">
 
-        <div class="col-md-9">
-            <main class="body-map">
-                <div class="row">
-                    <div class="col-md-12 col-sm-12">
-                        <div id="map"></div>
-                    </div>
-                    <div class="col-md-12 col-sm-12">
-                        <div class="table-map p-5">
-                            <table class="table table-striped text-center">
-                                <thead>
-                                <tr class="title-map">
-                                    <th class="active" scope="col">Postponed jobs</th>
-                                    <th scope="col">Termite reports to be checked</th>
-                                    <th scope="col">Certificates to be checked</th>
-                                    <th scope="col">Clients to be called today</th>
-                                    <th scope="col">Add reminder
-                                    </th>
-                                </tr>
-                                <tr>
-                                    <th scope="col">Date</th>
-                                    <th scope="col">job number</th>
-                                    <th scope="col">Client Name</th>
-                                    <th scope="col">Client Address</th>
-                                    <th scope="col">Status</th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                <tr>
-                                    <td>02/09/2020</td>
-                                    <td>J221</td>
-                                    <td>Diane Noble</td>
-                                    <td>Cullbura Beach NSW 2540</td>
-                                    <td>Posponded</td>
-                                </tr>
-                                <tr>
-                                    <td>02/09/2020</td>
-                                    <td>J221</td>
-                                    <td>Diane Noble</td>
-                                    <td>Cullbura Beach NSW 2540</td>
-                                    <td>Diane Noble</td>
-                                </tr>
-                                <tr>
-                                    <td>02/09/2020</td>
-                                    <td>J221</td>
-                                    <td>Diane Noble</td>
-                                    <td>Cullbura Beach NSW 2540</td>
-                                    <td>Posponded</td>
-                                </tr>
-                                <tr>
-                                    <td>02/09/2020</td>
-                                    <td>J221</td>
-                                    <td>Diane Noble</td>
-                                    <td>Cullbura Beach NSW 2540</td>
-                                    <td>Posponded</td>
-                                </tr>
-                                <tr>
-                                    <td>02/09/2020</td>
-                                    <td>J221</td>
-                                    <td>Diane Noble</td>
-                                    <td>Cullbura Beach NSW 2540</td>
-                                    <td>Posponded</td>
-                                </tr>
-                                <tr>
-                                    <td>02/09/2020</td>
-                                    <td>J221</td>
-                                    <td>Diane Noble</td>
-                                    <td>Cullbura Beach NSW 2540</td>
-                                    <td>Posponded</td>
-                                </tr>
-                                </tbody>
-
-                            </table>
                         </div>
                     </div>
+
                 </div>
 
-            </main>
+                <div class="col-md-4">
+
+                </div>
+            </div>
+
         </div>
-    </div>
-
+    </main>
 </section>
-
 
 
 <script src="../vendors/jquery/jquery.min.js"></script>
 <script src="../js/popper.min.js"></script>
 <script src="../js/bootstrap.min.js"></script>
-<script src="../js/jquery.slimscroll.min.js"></script>
-<!--    <script src="js/jquery.slicknav.min.js"></script>-->
-<script src="../js/metisMenu.min.js"></script>
-<script src="../js/bootstrap-datepicker.js"></script>
-<script src="../js/owl.carousel.min.js"></script>
-<script src="../js/chart.min.js"></script>
-<script src="../js/line-chart.js"></script>
-<!-- start chart js -->
-<!-- start highcharts js -->
-<script src="https://code.highcharts.com/highcharts.js"></script>
-<!-- all pie chart -->
-<script src="../js/pie-chart.js"></script>
-<!-- all bar chart -->
-<!--    <script src="js/bar-chart.js"></script>-->
-<!-- others plugins -->
-<script src="../js/plugins.js"></script>
-<script src="../js/scripts.js"></script>
 <script src="../js/main.js"></script>
-<script
-        src="https://maps.googleapis.com/maps/api/js?&callback=initMap&libraries=&v=weekly"
-        async </script>
 </body>
-
 </html>
