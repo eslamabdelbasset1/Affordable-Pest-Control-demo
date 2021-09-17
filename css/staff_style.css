@@ -12,7 +12,7 @@
 
 .main-content-mapping {
     transition: margin-left 300ms;
-    margin-left: 280px;
+    margin-left: 260px;
 }
 .main-content-mapping .nav-mapping{
     width: 110%;
@@ -131,7 +131,7 @@
 .main-content-mapping .mapping-img .right-img {
     position: absolute;
     top: 1%;
-    left: 247px;
+    left: 210px;
 }
 .main-content-mapping .mapping-img .right-img svg{
     position: absolute;

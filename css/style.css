@@ -90,7 +90,7 @@ body{
 }
 
 .sidebar .nav-links{
-    height: 100%;
+    height: 80%;
     padding: 12px 0 105px 0;
     overflow: auto;
 }
@@ -194,89 +194,50 @@ body{
 }
 .sidebar.close .nav-links li .sub-menu .link_name{
     font-size: 18px;
-    opacity: 1;
+    opacity: 0;
     display: block;
 }
 .sidebar .nav-links li .sub-menu.blank{
-    opacity: 1;
+    /*opacity: 1;*/
     pointer-events: auto;
     padding: 3px 20px 6px 16px;
-    opacity: 0;
-    pointer-events: none;
+    /*opacity: 0;*/
 }
 .sidebar .nav-links li:hover .sub-menu.blank{
     top: 50%;
     transform: translateY(-50%);
 }
-.sidebar li.logout{
-    position: absolute;
-    bottom: 5%;
-    left: 0%;
-    transform: translateY(-50%);
-    margin-left: 15%;
+
+.sidebar .log
+{
+    background: #FFFFFF;
+    border-radius: 7px;
+    padding: 3px;
+    color: #939DA7;
+    text-decoration: none;
+    font-size: 18px;
+
 }
-.sidebar i.logout-svg{
-    position: absolute;
-    top: 50%;
-    left: 130%;
-    transform: translateY(-50%);
-    /*background: #1d1b31;*/
-    width: 155%;
-    height: 18px;
-    line-height: 60px;
-    border-radius: 0px;
-    transition: all 0.5s ease;
-}
+/*.sidebar li.logout{*/
+/*    position: absolute;*/
+/*    bottom: 5%;*/
+/*    left: 0%;*/
+/*    transform: translateY(-50%);*/
+/*    margin-left: 15%;*/
+/*}*/
+/*.sidebar i.logout-svg{*/
+/*    position: absolute;*/
+/*    top: 50%;*/
+/*    left: 130%;*/
+/*    transform: translateY(-50%);*/
+/*    !*background: #1d1b31;*!*/
+/*    width: 155%;*/
+/*    height: 18px;*/
+/*    line-height: 60px;*/
+/*    border-radius: 0px;*/
+/*    transition: all 0.5s ease;*/
+/*}*/
 /*-------------------- 2.1 Sidebar Menu -------------------*/
-
-
-.metismenu li a.dropdown {
-    position: relative;
-    color: #939DA7;
-    font-size: 15px;
-    text-transform: capitalize;
-    letter-spacing: 0;
-    font-weight: 400;
-}
-
-.metismenu li span i {
-    -webkit-transition: all 0.3s ease 0s;
-    transition: all 0.3s ease 0s;
-}
-
-.metismenu li span.dropdown-icon:after {
-    position: absolute;
-    content: '\f107';
-    font-family: fontawesome;
-    right: 15px;
-    top: 0;
-    color: #939DA7;
-    font-size: 20px;
-}
-
-.metismenu li.active>span.dropdown-icon:after {
-    content: '\f106';
-}
-
-.metismenu li a:only-child:after {
-    content: '';
-}
-
-.metismenu li a span {
-    margin-left: 10px;
-}
-
-.metismenu li li a {
-    padding: 8px 20px;
-    color: #939DA7;
-}
-
-.metismenu li li a:after {
-    top: 6px;
-}
-.metismenu li li a:hover{
-    color: #69A200;}
-/*-------------------- END Sidebar Menu -------------------*/
 
 
 .sidebar-menu {
@@ -328,7 +289,7 @@ body{
     width: calc(100% - 70px);
     left: 70px;
 }
-
+#nav-toggle:checked+.sidebar .nav-links li p{display: none;}
 .main-content {
     transition: margin-left 300ms;
     margin-left: 345px;
@@ -375,7 +336,7 @@ header label span {
 {
     position: absolute;
     top: 7px;
-    right: 75px;
+    right: 25px;
     width: 350px;
     border-radius: 10px;
     border: none;
@@ -388,7 +349,7 @@ header label span {
 
 .search-box form i {
     position: absolute;
-    right: 400px;
+    right: 345px;
     top: 20px;
     font-size: 14px;
     color: #b1a7a7;
@@ -593,9 +554,4 @@ svg.date-icon{
 .cards .card-single p.percentage1{color: #868B8F;}
 .cards .background2 i.fas{color: #C52929;}
 
-main select.form-select{
-    background: #FFFFFF;
-    border: 1px solid #E5E5E5;
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.08177);
-    border-radius: 7px;
-}
+

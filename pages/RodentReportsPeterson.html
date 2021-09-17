@@ -5,14 +5,26 @@
         <meta name="viewport"
               content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
         <link rel="stylesheet" href="../css/font-awesome.min.css">
         <link rel="stylesheet" href="../css/all.min.css">
         <link rel="stylesheet" href="../vendors/bootstrap/bootstrap.min.css">
+        <link rel="stylesheet" href="../css/metisMenu.css">
+        <link rel="stylesheet" href="../css/datatables.min.css">
+        <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
         <link rel="stylesheet" href="../css/style.css">
         <link rel="stylesheet" href="../css/report-style.css">
 
+
         <title>Rodent Reports</title>
         <link rel="icon" href="../images/logo/apc_logo.png">
+        <style>
+            .dataTables_wrapper .dataTables_length,
+            .dataTables_wrapper .dataTables_filter
+            {
+                display: none;
+            }
+        </style>
     </head>
     <body>
 
@@ -38,8 +50,8 @@
                     </svg>
                     <span class="link_name active">Dashboard</span>
                 </a>
-                <ul class="sub-menu">
-                    <li><a class="link_name active" href="../index.html">Dashboard</a></li>
+                <ul class="sub-menu blank">
+                    <li><a class="link_name active" href="#">Dashboard</a></li>
                 </ul>
             </li>
             <li>
@@ -82,8 +94,8 @@
                 </div>
                 <ul class="sub-menu">
                     <li><a class="link_name" href="#">Clients</a></li>
-                    <li><a href="#">All Clients</a></li>
-                    <li><a href="#">Business Client</a></li>
+                    <li><a href="#">Login Form</a></li>
+                    <li><a href="#">Card Design</a></li>
                 </ul>
             </li>
             <li>
@@ -96,8 +108,10 @@
                     </a>
                     <i class='bx bxs-chevron-down arrow' ></i>
                 </div>
-                <ul class="sub-menu">
+                <ul class="sub-menu blank">
                     <li><a class="link_name" href="roster.html">Roster</a></li>
+                    <li><a href="#">Login Form</a></li>
+                    <li><a href="#">Login Form</a></li>
                 </ul>
             </li>
             <li>
@@ -132,7 +146,7 @@
                     </a>
                     <i class='bx bxs-chevron-down arrow' ></i>
                 </div>
-                <ul class="sub-menu">
+                <ul class="sub-menu blank">
                     <li><a class="link_name" href="#">Report</a></li>
                     <li><a>Termite Inspection</a></li>
                     <li><a href="../pages/rodentReports.html">Rodent Reports</a></li>
@@ -178,13 +192,13 @@
         <header>
             <h2>
                 <label for="nav-toggle">
-                        <span>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="13" viewBox="0 0 14 13" fill="none">
-                            <path d="M13 1.5H1" stroke="#8F99A4" stroke-width="1.8" stroke-linecap="round"/>
-                            <path d="M13 11.5H1" stroke="#8F99A4" stroke-width="1.8" stroke-linecap="round"/>
-                            <path d="M9.33692 6.5H1" stroke="#8F99A4" stroke-width="1.8" stroke-linecap="round"/>
-                            </svg>
-                        </span>
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="13" viewBox="0 0 14 13" fill="none">
+                                <path d="M13 1.5H1" stroke="#8F99A4" stroke-width="1.8" stroke-linecap="round"/>
+                                <path d="M13 11.5H1" stroke="#8F99A4" stroke-width="1.8" stroke-linecap="round"/>
+                                <path d="M9.33692 6.5H1" stroke="#8F99A4" stroke-width="1.8" stroke-linecap="round"/>
+                                </svg>
+                            </span>
                 </label>
             </h2>
             <div class="search-box pull-left">
@@ -194,11 +208,11 @@
                 </form>
             </div>
             <div class="user-wrapper">
-                    <span class="notification-area">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 17 16" fill="none">
-                            <path d="M13.919 8.81704C13.9157 8.81704 13.9124 8.81779 13.9091 8.81779C10.7519 8.81779 8.18207 6.2487 8.18207 3.09071C8.18207 2.22257 8.38177 1.40191 8.72947 0.663945C8.5494 0.646867 8.36693 0.63623 8.18207 0.63623C5.01914 0.63623 2.45499 3.20022 2.45499 6.36331V8.64431C2.45499 10.2635 1.74564 11.7918 0.501174 12.8439C0.0863504 13.1982 -0.0977657 13.7627 0.0511451 14.3134C0.224625 14.954 0.857871 15.3631 1.52228 15.3631H14.8378C15.5349 15.3631 16.1919 14.9115 16.3334 14.2283C16.443 13.6998 16.2549 13.172 15.845 12.8276C14.6553 11.8303 13.9673 10.3649 13.919 8.81704Z" fill="#939DA7"/>
-                        </svg>
-                    </span>
+                        <span class="notification-area">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 17 16" fill="none">
+                                <path d="M13.919 8.81704C13.9157 8.81704 13.9124 8.81779 13.9091 8.81779C10.7519 8.81779 8.18207 6.2487 8.18207 3.09071C8.18207 2.22257 8.38177 1.40191 8.72947 0.663945C8.5494 0.646867 8.36693 0.63623 8.18207 0.63623C5.01914 0.63623 2.45499 3.20022 2.45499 6.36331V8.64431C2.45499 10.2635 1.74564 11.7918 0.501174 12.8439C0.0863504 13.1982 -0.0977657 13.7627 0.0511451 14.3134C0.224625 14.954 0.857871 15.3631 1.52228 15.3631H14.8378C15.5349 15.3631 16.1919 14.9115 16.3334 14.2283C16.443 13.6998 16.2549 13.172 15.845 12.8276C14.6553 11.8303 13.9673 10.3649 13.919 8.81704Z" fill="#939DA7"/>
+                            </svg>
+                        </span>
                 <div class="user-profile pull-right">
                     <img class="avatar user-thumb" src="../images/logo/Bitmap-profile.png" alt="avatar">
                     <h4 class="user-name dropdown-toggle" data-toggle="dropdown"> Kumkum Rai <i class="fa fa-angle-down"></i></h4>
@@ -212,226 +226,146 @@
         </header>
 
 
-        <main>
+        <main class="print-section">
             <div class="container p-4 position-relative">
-                <h4 class="title">Shirley Curtis</h4>
-                <div class="row py-2">
-                    <div class="col-md-8 mt-3">
-                        <div class="row">
-                            <div class="col-sm-12 Site-Information">
-                                <h4>Site Information</h4>
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <img src="../images/check_report.png" alt="">
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="caption">
-                                            <p>site Location</p>
-                                            <h5>9 Centre Street,
-                                                Culbura Beach NSW 2540</h5>
-                                            <p>Cheked By</p>
-                                            <h5>Adrian Fife</h5>
+                <div class="row">
+                   <div class="col-md-6">
+                       <h4>Rodent Reports</h4>
+                       <span>Elmer Peterson</span>
+                   </div>
+                   <div class="col-md-6">
+                       <div class="d-flex justify-content-end mr-4">
+                           <i class="fas fa-share-alt"></i>
+                           <select class="form-select p-2" aria-label="Default select example">
+                               <option disabled selected>Share</option>
+                               <option value="1">Send Link</option>
+                               <option value="2">Email PDF</option>
+                           </select>
 
-                                            <h5>Checked DATE</h5>
-                                            <h5>October 1, 2021</h5>
+                           <button onclick="window.print()" class="print btn-outline-light text-dark">
+                               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="18" viewBox="0 0 20 18" fill="none">
+                                   <path d="M16.7574 5.65055H3.49521C1.9227 5.65055 0.65332 6.91993 0.65332 8.49244V12.2816C0.65332 13.3237 1.50589 14.1762 2.54791 14.1762H4.44251V16.0708C4.44251 17.1128 5.29508 17.9654 6.3371 17.9654H13.9155C14.9575 17.9654 15.8101 17.1128 15.8101 16.0708V14.1762H17.7047C18.7467 14.1762 19.5993 13.3237 19.5993 12.2816V8.49244C19.5993 6.91993 18.3299 5.65055 16.7574 5.65055ZM12.9682 16.0708H7.2844C6.76339 16.0708 6.3371 15.6445 6.3371 15.1235V11.3343H13.9155V15.1235C13.9155 15.6445 13.4892 16.0708 12.9682 16.0708ZM16.7574 9.43974C16.2364 9.43974 15.8101 9.01345 15.8101 8.49244C15.8101 7.97143 16.2364 7.54514 16.7574 7.54514C17.2784 7.54514 17.7047 7.97143 17.7047 8.49244C17.7047 9.01345 17.2784 9.43974 16.7574 9.43974ZM14.8628 0.914062H5.38981C4.86879 0.914062 4.44251 1.34035 4.44251 1.86136V3.75595C4.44251 4.27697 4.86879 4.70325 5.38981 4.70325H14.8628C15.3838 4.70325 15.8101 4.27697 15.8101 3.75595V1.86136C15.8101 1.34035 15.3838 0.914062 14.8628 0.914062Z" fill="#48515B"/>
+                               </svg>
+                               Print</button>
+                       </div>
+                   </div>
+               </div>
+                <div class="row my-5">
+                    <div class="row">
+                        <div class="col-md-6 Site-Information-Peterson">
+                            <h4>Site Information</h4>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <img src="../images/check_report.png" alt="">
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="caption">
+                                        <p>Client Name</p>
+                                        <h5>Elmer Peterson</h5>
 
-                                            <p>INV/JOB NUMBER</p>
-                                            <h5>1548-21     J5564</h5>
-                                        </div>
+                                        <p>Client Address</p>
+                                        <h5>Culbura Beach NSW 2540</h5>
+
+                                        <h5>Checked DATE</h5>
+                                        <h5>Lean Cuisine PTY. LTD.</h5>
+
+                                        <p>Company Address</p>
+                                        <h5>Culbura Beach NSW 2540</h5>
                                     </div>
                                 </div>
                             </div>
-
-                            <div class="col-sm-12 mt-4">
-                                <div class="row my-3">
-                                    <div class="col-md-6">
-                                        <div class="check-box d-flex justify-content-between">
-                                            <div class="form-check">
-                                                <label class="container">Rodent Box 1
-                                                    <input type="checkbox" checked="checked">
-                                                    <span class="checkmark"></span>
-                                                </label>
-                                            </div>
-                                            <div class="check">
-                                                <button data-toggle="modal" data-target="#update" class="btn-outline-light">Update</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="check-box d-flex justify-content-between">
-                                            <div class="form-check">
-                                                <label class="container">Rodent Box 2
-                                                    <input type="checkbox">
-                                                    <span class="checkmark"></span>
-                                                </label>
-                                            </div>
-                                            <div class="check">
-                                                <button data-toggle="modal" data-target="#update" class="btn-outline-light">Check Station</button>
-                                            </div>
-                                        </div>
-                                    </div>
+                        </div>
+                        <div class="col-md-6 site-chart">
+                            <div class="card">
+                                <div class="card-body pb-0">
+                                    <h4 class="profit-title">Rodent Report</h4>
+                                    <canvas id="rodentReport"></canvas>
                                 </div>
-                                <div class="row my-3">
-                                    <div class="col-md-6">
-                                        <div class="check-box d-flex justify-content-between">
-                                            <div class="form-check">
-                                                <label class="container">Rodent Box 3
-                                                    <input type="checkbox">
-                                                    <span class="checkmark"></span>
-                                                </label>
-                                            </div>
-                                            <div class="check">
-                                                <button data-toggle="modal" data-target="#update" class="btn-outline-light">Check Station</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="check-box d-flex justify-content-between">
-                                            <div class="form-check">
-                                                <label class="container">Rodent Box 4
-                                                    <input type="checkbox">
-                                                    <span class="checkmark"></span>
-                                                </label>
-                                            </div>
-                                            <div class="check">
-                                                <button data-toggle="modal" data-target="#update" class="btn-outline-light">Check Station</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row my-3">
-                                    <div class="col-md-6">
-                                        <div class="check-box d-flex justify-content-between">
-                                            <div class="form-check">
-                                                <label class="container">Rodent Box 5
-                                                    <input type="checkbox">
-                                                    <span class="checkmark"></span>
-                                                </label>
-                                            </div>
-                                            <div class="check">
-                                                <button data-toggle="modal" data-target="#update" class="btn-outline-light">Check Station</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="check-box d-flex justify-content-between">
-                                            <div class="form-check">
-                                                <label class="container">Rodent Box 6
-                                                    <input type="checkbox">
-                                                    <span class="checkmark"></span>
-                                                </label>
-                                            </div>
-                                            <div class="check">
-                                                <button data-toggle="modal" data-target="#update" class="btn-outline-light">Check Station</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row my-3">
-                                    <div class="col-md-6">
-                                        <div class="check-box d-flex justify-content-between">
-                                            <div class="form-check">
-                                                <label class="container">Rodent Box 7
-                                                    <input type="checkbox">
-                                                    <span class="checkmark"></span>
-                                                </label>
-                                            </div>
-                                            <div class="check">
-                                                <button data-toggle="modal" data-target="#update" class="btn-outline-light">Check Station</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="check-box d-flex justify-content-between">
-                                            <div class="form-check">
-                                                <label class="container">Rodent Box 8
-                                                    <input type="checkbox" checked>
-                                                    <span class="checkmark"></span>
-                                                </label>
-                                            </div>
-                                            <div class="check">
-                                                <button data-toggle="modal" data-target="#update" class="btn-outline-light">Update</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 site-mapping">
-                        <img src="../images/check_map.png" alt="">
-                        <button class="btn btn-success">Generate Report</button>
-                        <button class="btn btn-success">Email Report</button>
-                        <button class="btn btn-success">Upload Report</button>
+                </div>
+
+                <div class="table">
+                    <div class="colors">
+                        <span>PEST ACTIVITY: </span>
+                        <span class="badge bg-success text-success">colors</span>
+                        <span>Very low</span>
+                        <span class="badge bg-warning text-warning">colors</span>
+                        <span>Low</span>
+                        <span class="badge medium">colors</span>
+                        <span>Medium</span>
+                        <span class="badge bg-danger text-danger">colors</span>
+                        <span>High</span>
                     </div>
+                    <table class="table table-striped table bordered mt-3" id="staffDate">
+                        <thead>
+                        <tr><th></th><th></th><th></th><th></th><th></th></tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>Rodent Box 1</td>
+                            <td>Activity: <b> Yes</b></td>
+                            <td>Amount:
+                                <input type="text">
+                                <input type="text">
+                                <input type="text">
+                                <input type="text">
+                            </td>
+                            <td>Snail effected: <b>Yes</b></td>
+                            <td>Status: <small> - </small></td>
+                        </tr>
+                        <tr>
+                            <td>Rodent Box 1</td>
+                            <td>Activity: <b>Yes</b></td>
+                            <td>Amount:
+                                <input type="text">
+                                <input type="text">
+                                <input type="text">
+                                <input type="text">
+                            </td>
+                            <td>Snail effected: <b>Yes</b></td>
+                            <td>Status: <small> - </small></td>
+                        </tr>
+                        <tr>
+                            <td>Rodent Box 1</td>
+                            <td>Activity: <b>Yes</b></td>
+                            <td>Amount:
+                                <input type="text">
+                                <input type="text">
+                                <input type="text">
+                                <input type="text"></td>
+                            <td>Snail effected: <b>Yes</b></td>
+                            <td>Status: <small> Station Replaced </small></td>
+                        </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
+
         </main>
-
-        <!--update Modal -->
-        <div class="modal fade" id="update" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Rodent Box 1</h5>
-                        <button class="btn btn-success "> Active</button>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                       <div class="row">
-                           <div class="col-md-8">
-                               <p>Amount of Ingredient</p>
-                                <div class="input-colors">
-                                    <input type="text">
-                                    <input type="text">
-                                    <input type="text">
-                                    <input type="text">
-                                </div>
-
-                               <div class="model-box">
-                                   <p class="mt-3">Bait effected by snails </p>
-                                   <div class="form-check form-check-inline">
-                                       <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-                                       <label class="form-check-label" for="inlineCheckbox1">Yes</label>
-                                   </div>
-                                   <div class="form-check form-check-inline">
-                                       <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-                                       <label class="form-check-label" for="inlineCheckbox2">No</label>
-                                   </div>
-                               </div>
-                           </div>
-                           <div class="col-md-4">
-                               <div class="colors">
-                                   <p>Pest Activity:</p>
-                                   <span class="badge bg-success text-success">colors</span>
-                                   <span>Very low</span>
-                                   <span class="badge bg-warning text-warning">colors</span>
-                                   <span>Low</span>
-                                   <span class="badge medium">colors</span>
-                                   <span>Medium</span>
-                                   <span class="badge bg-danger text-danger">colors</span>
-                                   <span>High</span>
-                               </div>
-                           </div>
-                       </div>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-outline-light">Station Damage</button>
-                        <button type="button" class="btn btn-outline-light">Station Missing</button>
-                        <button type="button" class="btn btn-success"><a href="rodentReportsPeterson.html">Submit</a></button>
-                    </div>
-                </div>
-            </div>
-        </div>
     </section>
 
 
     <script src="../vendors/jquery/jquery.min.js"></script>
     <script src="../js/popper.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/jquery.slimscroll.min.js"></script>
+    <script src="../js/metisMenu.min.js"></script>
+    <script src="../js/bootstrap-datepicker.js"></script>
+    <script src="../js/owl.carousel.min.js"></script>
+    <script src="../js/chart.min.js"></script>
+    <script src="../js/line-chart.js"></script>
+    <!-- start ch../art js -->
+    <!-- start highcharts js -->
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <!-- all pie chart -->
+    <script src="../js/datatables.min.js"></script>
+    <script src="../js/staffDataTable.js"></script>
+    <script src="../js/pie-chart.js"></script>>
+    <script src="../js/scripts.js"></script>
     <script src="../js/main.js"></script>
-    </body>
+
+
+</body>
 </html>

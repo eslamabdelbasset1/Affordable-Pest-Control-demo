@@ -1,28 +1,31 @@
 
-var nowTemp = new Date();
-var now = new Date(nowTemp.getFullYear(), nowTemp.getMonth(), nowTemp.getDate(), 0, 0, 0, 0);
 
-var checkin = $('#dpd1').datepicker({
-    onRender: function(date) {
-        return date.valueOf() < now.valueOf() ? 'disabled' : '';
-    }
-}).on('changeDate', function(ev) {
-    if (ev.date.valueOf() > checkout.date.valueOf()) {
-        var newDate = new Date(ev.date)
-        newDate.setDate(newDate.getDate() + 1);
-        checkout.setValue(newDate);
-    }
-    checkin.hide();
-    $('#dpd2')[0].focus();
-}).data('datepicker');
-var checkout = $('#dpd2').datepicker({
-    onRender: function(date) {
-        return date.valueOf() <= checkin.date.valueOf() ? 'disabled' : '';
-    }
-}).on('changeDate', function(ev) {
-    checkout.hide();
-}).data('datepicker');
-$('.datepicker').datepicker()
+
+
+// var nowTemp = new Date();
+// var now = new Date(nowTemp.getFullYear(), nowTemp.getMonth(), nowTemp.getDate(), 0, 0, 0, 0);
+//
+// var checkin = $('#dpd1').datepicker({
+//     onRender: function(date) {
+//         return date.valueOf() < now.valueOf() ? 'disabled' : '';
+//     }
+// }).on('changeDate', function(ev) {
+//     if (ev.date.valueOf() > checkout.date.valueOf()) {
+//         var newDate = new Date(ev.date)
+//         newDate.setDate(newDate.getDate() + 1);
+//         checkout.setValue(newDate);
+//     }
+//     checkin.hide();
+//     $('#dpd2')[0].focus();
+// }).data('datepicker');
+// var checkout = $('#dpd2').datepicker({
+//     onRender: function(date) {
+//         return date.valueOf() <= checkin.date.valueOf() ? 'disabled' : '';
+//     }
+// }).on('changeDate', function(ev) {
+//     checkout.hide();
+// }).data('datepicker');
+// $('.datepicker').datepicker()
 
 //====================== Profit ==========================
 var radiusPlus = 4;
@@ -270,3 +273,47 @@ var mytotalUnpaidJobs = new Chart(totalUnpaidJobs, {
     }
 });
 //---------------- Total Job ------------------------
+
+
+
+
+
+
+//----------------------- Rodent Report -------------
+var rodentReport = document.getElementById("rodentReport");
+var rodentReport = new Chart(rodentReport, {
+    type: 'bar',
+    data: {
+        labels: ['JAN','FEB', 'MAR', 'APR', 'MAY', 'JUN', 'JUL', 'SEP', 'OCT', 'NOV'],
+        datasets: [{
+            label: false,
+            borderWidth: 0,
+            backgroundColor: [],
+            data: [47, 29, 68, 78, 97, 144,111, 164 , 104, 78],
+        }]
+    },
+    options: {
+        scales: {
+            xAxes: [{
+                barThickness: 20,
+                gridLines: {
+                    offsetGridLines: false,
+                    display: false
+                }
+            }],
+            yAxes: [{
+                ticks: {
+                    beginAtZero: true,
+                    stepSize: 25,
+                    suggestedMin: 50,
+                    suggestedMax: 100
+                }
+            }]
+        },
+        legend: {
+            display: false,
+        }
+
+    }
+});
+//----------------------- Total Earning -------------

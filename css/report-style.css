@@ -241,12 +241,17 @@ main .check-box .container .checkmark:after {
     border-radius: 4px;
     padding: 7px;
 }
-#update .modal-body  span.medium{color: #FF7629; background: #FF7629}
+#update .modal-body  span.medium,
+main .table .colors span.badge.medium
+{color: #FF7629; background: #FF7629}
+
 .modal-content .btn-success
 {
     font-size: 12px;
     padding: 4px 15px;
+
 }
+#update a{color: #fff; text-decoration: none;}
 #update .modal-header > button.btn.btn-success {padding: 3px 10px;}
 .modal-footer{display: inline-block !important}
 .modal-content .modal-footer .btn-success {float: right !important}
@@ -257,3 +262,113 @@ main .check-box .container .checkmark:after {
     color: #939DA7;
     border: 1px solid #939DA7;
 }
+/*------------------------End ---------------------------*/
+
+main h4.title{
+
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 31px;
+    color: #292929;
+    margin-top: 10px;
+}
+main h4.title::after{
+    content: '';
+    position: absolute;
+    width: 90%;
+    height: 1px;
+    left: 2%;
+    top: 13%;
+    border: 1px solid #E7E9EE;
+}
+
+main .Site-Information-Peterson{
+    background: #FFFFFF;
+    border: 1px solid #E5E5E5;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.08177);
+    border-radius: 7px;
+    padding: 20px;
+}
+main .Site-Information-Peterson h4{
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 35px;
+    color: #69A200;
+}
+main .Site-Information-Peterson img{
+    width: 100%;
+}
+main .Site-Information-Peterson .caption p
+{
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 13px;
+    text-transform: uppercase;
+    color: #868B8F;
+    margin-bottom: 0;
+}
+main .Site-Information-Peterson .caption h5
+{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 30px;
+    color: #292929;
+}
+
+main .site-chart
+{
+
+}
+main .site-chart button, main .site-chart img{
+    margin: 10px;
+    width: 45%;
+    background: #69A200;
+}
+main select.form-select,
+main .print
+{
+    background: #FFFFFF;
+    border: 1px solid #E5E5E5;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.08177);
+    border-radius: 7px;
+    text-align: center;
+}
+main .print{
+    margin-left: 15px;
+    padding: 7px;
+}
+main i.fa-share-alt{
+    position: absolute;
+    top: 24%;
+    left: 59%;
+    transform: translateX(-59%);
+    font-size: 12px;
+}
+table.dataTable tbody td {
+    width: 20%;}
+
+main.print-section tbody input[type=text]
+{
+    width: 15%;
+    height: 15px;
+    border-radius: 5px;
+    border: 1px solid #a0a0a0;
+}
+main .table .colors span{margin-left: 5px; font-size: 8px;}
+
+
+
+/*// -------------- Print ------------------*/
+@media print {
+    body{
+        background: transparent;
+    }
+    .sidebar,
+    header{
+        display: none;
+    }
+
+}
+
+
+/*--------------------*/
